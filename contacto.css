@@ -3,12 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    a {
-        text-decoration: none;
-        color: inherit;
-      }
-      
 }
+
+/* Reset de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 .nav-menu {
     list-style: none;
@@ -42,6 +45,7 @@ header {
 
 .logo img {
     width: 150px;
+    border-radius: 100%;
 }
 
 .nav-menu {
@@ -195,6 +199,7 @@ header {
 .contact p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .contact form {
@@ -324,10 +329,47 @@ footer {
 
 .contact input,
 .contact textarea {
-    width: 350px; /* Faz ocupar toda a largura do contêiner */
+    width: 300px; /* Faz ocupar toda a largura do contêiner */
     height: 3rem; /* Altura dos inputs (ajustável) */
 }
 
 .contact textarea {
     height: 200px; /* Altura específica pro textarea */
+}
+
+/* Estilo para campos com erro */
+input.error, textarea.error {
+    border: 2px solid red;
+    background-color: #fdd;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo para campos em foco */
+input.focus, textarea.focus {
+    border: 2px solid #4CAF50;
+    background-color: #f0fff0;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Estilo para o botão de enviar */
+button {
+    background-color: #da6e61;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+    background-color: #c45248;
+    transform: scale(1.05);
+}
+
+/* Ajuste para botões em estado de foco */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4CAF50;
 }

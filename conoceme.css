@@ -42,6 +42,7 @@ header {
 
 .logo img {
     width: 150px;
+    border-radius: 100%;
 }
 
 .nav-menu {
@@ -152,6 +153,7 @@ header {
     padding: 2rem 1.5rem;
     background-color: #fff;
     color: #444;
+    text-align: center;
 }
 
 .music h2 {
@@ -313,4 +315,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.img-nestor {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente, se necessário */
+    margin: 20px 0;           /* Adiciona espaçamento superior e inferior */
+}
+
+.img-nestor img {
+    width: 30%;  /* Ajusta o tamanho da imagem. Pode ser alterado conforme necessário */
+    height: auto;  /* Mantém a proporção original da imagem */
+    border-radius: 10px;  /* Opcional: aplica bordas arredondadas */
 }
