@@ -367,9 +367,3 @@ button:hover {
     background-color: #c45248;
     transform: scale(1.05);
 }
-
-/* Ajuste para botões em estado de foco */
-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #4CAF50;
-}
