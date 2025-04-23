@@ -122,8 +122,13 @@ header {
 }
 
 .about p {
-    font-size: 1.2rem;
-}
+    max-width: 800px; /* limita a largura */
+    margin: 0 auto;    /* centraliza o parágrafo */
+    text-align: center; /* ou use 'left' ou 'center', como preferir */
+    line-height: 1.6;   /* melhora a leitura */
+    font-size: 1.1rem;
+  }
+  
 
 /* Values Section */
 .values {
